@@ -35,23 +35,13 @@ import desi.juan.email.internal.exception.EmailException;
 import desi.juan.email.internal.exception.SendEmailException;
 
 import javax.activation.DataHandler;
-import javax.mail.Address;
-import javax.mail.Header;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Transport;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
+import javax.mail.*;
+import javax.mail.internet.*;
 import java.util.Calendar;
 
 import static desi.juan.email.api.EmailConstants.MULTIPART;
 import static java.lang.String.format;
-import static javax.mail.Message.RecipientType.BCC;
-import static javax.mail.Message.RecipientType.CC;
-import static javax.mail.Message.RecipientType.TO;
+import static javax.mail.Message.RecipientType.*;
 import static javax.mail.Part.ATTACHMENT;
 import static javax.mail.Part.INLINE;
 

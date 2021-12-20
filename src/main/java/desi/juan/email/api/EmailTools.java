@@ -7,12 +7,7 @@ import desi.juan.email.internal.StoredEmail;
 import desi.juan.email.internal.commands.FlagOperations;
 import desi.juan.email.internal.exception.RetrieveEmailException;
 
-import javax.mail.Address;
-import javax.mail.Flags;
-import javax.mail.Folder;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.UIDFolder;
+import javax.mail.*;
 import javax.mail.internet.ContentType;
 import javax.mail.internet.MimeUtility;
 import javax.mail.search.AndTerm;
@@ -31,11 +26,7 @@ import static java.lang.Long.parseLong;
 import static java.lang.String.format;
 import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toList;
-import static javax.mail.Flags.Flag.ANSWERED;
-import static javax.mail.Flags.Flag.DELETED;
-import static javax.mail.Flags.Flag.DRAFT;
-import static javax.mail.Flags.Flag.RECENT;
-import static javax.mail.Flags.Flag.SEEN;
+import static javax.mail.Flags.Flag.*;
 
 public class EmailTools {
 

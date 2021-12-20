@@ -26,7 +26,6 @@
 package desi.juan.email.internal;
 
 import com.google.common.collect.ImmutableList;
-import com.sun.mail.pop3.POP3Folder;
 import desi.juan.email.api.Email;
 import desi.juan.email.api.EmailAttachment;
 import desi.juan.email.api.EmailBody;
